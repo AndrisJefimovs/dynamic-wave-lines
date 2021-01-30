@@ -47,8 +47,8 @@ function draw() {
 	ctx.strokeStyle = config.lineColor;
 	ctx.lineWidth = config.lineWeight;
 	for (
-		let y = -config.lineHeight;
-		y < canvas.height + config.lineHeight;
+		let y = -config.noiseHeight;
+		y < canvas.height + config.noiseHeight;
 		y += config.lineHeight
 	) {
 		ctx.beginPath();
