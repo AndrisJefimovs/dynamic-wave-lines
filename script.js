@@ -78,7 +78,7 @@ function draw() {
   clearCanvas();
   ctx.strokeStyle = config.lineColor;
   ctx.lineWidth = config.lineWeight;
-  for (let y = -config.lineHeight; y < canvas.height + config.lineHeight; y += config.lineHeight) {
+  for (let y = -config.noiseHeight; y < canvas.height + config.noiseHeight; y += config.lineHeight) {
     ctx.beginPath();
     for (let x = 0 - config.lineWeight; x < canvas.width + config.lineWeight; x++) {
       let n = Noise.simplex2(x * config.noiseMultiplier + moveX, y * config.noiseMultiplier + moveY) * config.noiseHeight;
